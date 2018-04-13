@@ -1,6 +1,11 @@
 
 
-
+.slider_first * {
+	color: black;
+}
+.slider_first .text--normal {
+	color: black;
+}
 
 *, *:before, *:after {
 	-webkit-box-sizing: border-box;
