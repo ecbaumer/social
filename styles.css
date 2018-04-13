@@ -1,3 +1,7 @@
+
+
+
+
 *, *:before, *:after {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -233,4 +237,15 @@ body {
 .flex__container.animate--end .pokemon__img {
 	transform: translate3d(200px,0,0);
 	opacity: 0;
+}
+
+
+@media screen and (max-width: 600px) {
+	.pokemon__img {
+		max-height: 30vw;
+	}
+	.text--big {
+		font-size: 1.5em;
+		line-height: normal;
+	}
 }
