@@ -19,45 +19,63 @@
 	font-size: 3.5em;
 }
 
- a.nav1:after {
+.flex__content.slider_fourth {
+	margin-left: 20px;
+	width: 100%;
+	margin-right: 5px;
+}
+.img-4 {
+	width: 24vw;
+}
+
+a.nav1:after {
 	position: absolute;
 	content: "S&C";
-	margin-top:  19px;
-	margin-left: 11px;
+	margin-top:  23px;
+	margin-left: 13px;
 	color: black;
+	font-family: 'Special Elite',
+	cursive;
 }
 a.nav2:after {
 	position: absolute;
-	content: "Authority";
-	margin-top: 18px;
-	margin-left: 0px;
+	content: "Auth- ority";
+	margin-top: 16px;
+	margin-left: 8px;
 	color: black;
 	font-size: 14px;
+	font-family: 'Special Elite',
+	cursive;
 }
 a.nav3:after {
 	position: absolute;
 	content: "How";
-	margin-top: 19px;
-	margin-left: 13px;
+	margin-top: 22px;
+	margin-left: 14px;
 	color: black;
 	font-size: 14px;
+	font-family: 'Special Elite', cursive;
 }
 a.nav4:after {
 	position: absolute;
 	content: "Action";
-	margin-top: 19px;
-	margin-left: 8px;
+	margin-top: 22px;
+	margin-left: 4px;
 	color: black;
 	font-size: 14px;
+	font-family: 'Special Elite',
+	cursive;
 }
 
 a.nav5:after {
 	position: absolute;
 	content: "Contact";
-	margin-top: 19px;
-	margin-left: 4px;
+	margin-top: 22px;
+	margin-left: 0px;
 	color: black;
 	font-size: 14px;
+	font-family: 'Special Elite',
+	cursive;
 }
 
 li {
@@ -90,7 +108,7 @@ li {
 	/* text-indent: -9999px; */
 	box-shadow: none;
 	border: 2px solid black;
-	background: rgba(0,0,0,0.2);
+	background: rgba(44, 116, 211, 0.42);
 	border-radius: 50%;
 }
 
@@ -327,13 +345,19 @@ body {
 		right: 6%;
 	}
 }
+@media screen and (max-width: 1150px) {
+	.text--big {
+		font-size: 4.5em;
+	}
+}
+
 @media screen and (max-width: 1000px) {
 	.text--sub {
 		margin: 10px 0;
 		font-size: 20px;
 	}
 	.text--big {
-		font-size: 4.5em;
+		font-size: 3.5em;
 		line-height: normal;
 		margin: 0;
 	}
@@ -341,9 +365,40 @@ body {
 		font-size: 2.5em;
 	}
 }
+
+@media screen and (max-width: 780px) {
+	.text--big {
+		font-size: 2.5em;
+		line-height: normal;
+		margin: 0;
+	}
+	.slider_fourth p.text--sub {
+		margin: 5px 0;
+		font-size: 13px;
+	}
+
+	.slider_fourth h1 {
+		font-size: 2em;
+	}
+
+	ol {
+		font-size: 15px;
+	}
+
+	li {
+		margin-bottom: 4px;
+	}
+}
+
 @media screen and (max-width: 600px) {
 	.flex__item--left {
-		width: 80%;
+		width: 75%;
+	}
+	.flex__item--right {
+		width: 25%;
+	}
+	p.text--sub {
+		letter-spacing: 2px;
 	}
 	.flex__content {
 		margin-left: 20px;
@@ -360,6 +415,33 @@ body {
 		font-size: 1.5em;
 		line-height: normal;
 	}
+	.slider_fourth p.text--sub {
+		margin: 5px 0;
+		font-size: 13px;
+	}
 
+	.slider_fourth h1 {
+		font-size: 1em;
+	}
 
+	ol {
+		font-size: 14px;
+	}
+
+	li {
+		margin-bottom: 4px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	ol {
+		font-size: 12px;
+	}
+	li {
+		margin-bottom: 2px;
+	}
+	.slider_fourth.flex__content {
+		margin-left: 5px;
+		
+	}
 }
